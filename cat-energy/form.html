@@ -30,7 +30,72 @@
         </div>
       </nav>
     </header>
-    
+    <main class="form-main">
+      <h1 class="form-main__name">Подбор программы</h1>
+      <p class="form-main__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <form class="form-main__basic-part" action="https://echo.htmlacademy.ru/">
+        <fieldset>
+          <label for="name-field">Имя:*</label>
+          <input type="text" id="name-field" name="name" required>
+          <label for="weight-field">Вес (кг):*</label>
+          <input type="text" id="weight-field" name="weight" required>
+          <label for="age-field">Возраст (лет):</label>
+          <input type="text" id="age-field" name="age">
+        </fieldset>
+        <fieldset>
+          <label class="fat-filter" for="filter-fat-lose">
+          <input type="radio" name="fat" id="filter-fat-lose" class="visually-hidden" value="Похудение">
+          <span class="radio-indicator"></span>
+          Похудение</label>
+          <label class="fat-filter" for="filter-fat-plump">
+          <input type="radio" name="fat" id="filter-fat-plump" class="visually-hidden" value="Набор массы">
+          <span class="radio-indicator"></span>
+          Набор массы</label>
+          <label class="fat-filter" for="filter-fat-advice">
+          <input type="radio" name="fat" id="filter-fat-advice" class="visually-hidden" value="Нужен совет">
+          <span class="radio-indicator"></span>
+          Не знаю (Нужен ваш совет)</label>
+        </fieldset>
+        <fieldset>
+          <legend>Контактные данные (владельца кота)</legend>
+          <label for="owner-field">E-mail:*</label>
+          <input type="text" id="owner-field" name="email" value="kuklachev@gmail.com" required>
+          <label for="phone-field">Телефон:*</label>
+          <input type="text" id="phone-field" name="phone" value="8 (960) 900-60-90" required>
+        </fieldset>
+        <fieldset>
+          <legend>Комментарий</legend>
+          <textarea name="message-box" placeholder="Расскажите обо всех повадках кота" rows="7"></textarea>
+        </fieldset>
+        <fieldset>
+          <legend>Дополнительно</legend>
+          <label class="add-item-label" for="filter-sweetener">
+          <input type="checkbox" name="sweetener" id="filter-sweetener" class="visually-hidden" checked>
+          <span class="checkbox-indicator"></span>
+          Сахарозаменитель</label>
+          <label class="add-item-label" for="filter-water">
+          <input type="checkbox" name="water" id="filter-water" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+          Питьевая вода</label>
+          <label class="add-item-label" for="filter-milk">
+          <input type="checkbox" name="milk" id="filter-milk" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+          Молоко</label>
+          <label class="add-item-label" for="filter-vitamins">
+          <input type="checkbox" name="vitamins" id="filter-vitamins" class="visually-hidden">
+          <span class="checkbox-indicator"></span>
+          Витамины</label>
+        </fieldset>
+        <input class="button-filters" type="submit" name="submit" value="Отправить заявку">
+      </form>
+      <p class="form-main__description form-explain">* — Обязательные поля</p>
+    </main>
+    <section class="contacts">
+      <h2 class="contacts__name">Приглашаем к сотрудничеству дилеров!</h2>
+      <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+      <p class="contacts__map-picture"><img src="http://placehold.it/320x365" width="320" height="365" alt="Офис Cat Energy"></p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533268!2d30.320858716070596!3d59.938716481876156!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCDQoNC-0YHRgdC40Y8sIDE5MTE4Ng!5e0!3m2!1sru!2sby!4v1554309518936!5m2!1sru!2sby" width="320" height="365" allowfullscreen></iframe>
+    </section>
     <footer class="page-footer">
       <h1 class="page-footer__name">
         <span class="page-footer__name first-name">CAT</span>
