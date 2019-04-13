@@ -1,11 +1,18 @@
 .page-footer {
   margin: 0;
   padding: 20px;
-  background-color: #f2f2f2;
+  background-color: @grey-background;
   width: auto;
+  display: block;
 }
 
 .page-footer__logo-image {
   margin: 0;
   padding: 20px 0 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    display: flex;
+  }
 }

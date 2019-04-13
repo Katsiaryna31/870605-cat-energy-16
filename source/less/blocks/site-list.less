@@ -1,9 +1,17 @@
 .site-list__item {
-  padding: 23px 0;
+  padding: 23px 50px;
+  text-align: center;
   list-style: none;
+  display: inline-block;
 }
 
 .site-list__item-link {
   color: #111111;
   text-decoration: none;
+}
+
+@media (min-width: @tablet-width) {
+  .site-list__item {
+    padding: 0 35px;
+  }
 }
