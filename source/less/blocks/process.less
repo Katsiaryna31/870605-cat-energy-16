@@ -23,4 +23,44 @@
   line-height: 18px;
   font-family: @Arial;
   list-style: none;
+  display: block;
+}
+
+@media (min-width: @tablet-width) {
+  .process {
+    margin-bottom: 25px;
+  }
+
+  .process__name {
+    margin-bottom: 60px;
+    font-size: 60px;
+  }
+
+  .process__list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .process__item {
+    padding: 120px 80px 50px 0;
+    margin-bottom: 85px;
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .process {
+    margin-bottom: 5px;
+  }
+
+  .process__item {
+    padding-right: 0;
+    margin-bottom: 5px;
+    width: 245px;
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
