@@ -1,18 +1,24 @@
 .page-footer {
-  margin: 0;
-  padding: 20px;
   background-color: @grey-background;
   width: auto;
   display: block;
 }
 
 .page-footer__logo-image {
-  margin: 0;
-  padding: 20px 0 30px;
+  margin: 0 auto;
+  display: block;
+  padding: 35px 76px;
+  width: 128px;
+  height: 24px;
+  border-bottom: 1px solid @border-footer;
 }
 
 @media (min-width: @tablet-width) {
   .page-footer {
     display: flex;
+  }
+
+  .page-footer__logo-image {
+    border: none;
   }
 }

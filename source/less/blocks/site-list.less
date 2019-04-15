@@ -1,8 +1,15 @@
 .site-list__item {
-  padding: 23px 50px;
+  padding: 22px 40px;
+  margin-left: -20px;
+  margin-right: -20px;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: medium;
   text-align: center;
   list-style: none;
-  display: inline-block;
+  display: block;
+  border-top: 1px solid @border-header;
+  border-bottom: 1px solid @border-header;
 }
 
 .site-list__item-link {
@@ -13,5 +20,21 @@
 @media (min-width: @tablet-width) {
   .site-list__item {
     padding: 0 35px;
+    border: none;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: normal;
   }
 }
+
+@media (min-width: @desktop-width) {
+  .site-list__item {
+    margin-top: 73px;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .site-list__item-link--index {
+    color: #ffffff;
+    }
+  }
