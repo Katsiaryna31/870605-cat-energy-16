@@ -8,8 +8,8 @@
   background: @green-background url("../../img/index-background-mobile@1x.jpg") no-repeat center 0;
   background-size: cover;
   width: auto;
-  padding-top: 30px;
-  padding-bottom: 140px;
+  padding-top: 28px;
+  padding-bottom: 137px;
   margin: 0 -20px;
 }
 
@@ -18,7 +18,7 @@
   line-height: 36px;
   padding: 0 5px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
   font-weight: normal;
 }
@@ -56,12 +56,13 @@
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    position: relative;
   }
 
   .program__name-part {
     margin: 0;
     background: #ffffff;
-    padding: 40px 90px 20px;
+    padding: 40px 88px 20px;
   }
 
   .program__name {
@@ -69,7 +70,7 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 40px;
+    margin-bottom: 42px;
     color: #111111;
   }
 
@@ -79,31 +80,31 @@
     line-height: 20px;
     text-align: left;
     color: #111111;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
 
   .program__main-image {
     margin: 0 auto;
-    margin-top: -105px;
     width: 709px;
     height: 609px;
-    order: 3;
   }
 
   .program__button {
-    padding: 16px 25px;
+    padding: 16px 27px;
     margin-left: 90px;
     font-size: 20px;
     line-height: 20px;
     align-self: flex-start;
     z-index: 2;
+    position: absolute;
+    top: 268px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .program__header {
     padding: 0;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
     flex-direction: row;
   }
 
@@ -112,19 +113,38 @@
     padding: 85px 20px 20px 80px;
   }
 
-  .program__main-image {
-    margin: -140px -220px -55px 5px;
-    padding: 140px 220px 55px 0;
+  .program__slogan {
+    .zero-space ();
+    padding-left: 0;
+  }
+
+  .program__image-wrapper {
     background: @green-background url("../../img/index-background-desktop@1x.jpg") no-repeat 100% 0;
-    background-size: cover;
+    background-size: 720px 700px;
+    position: relative;
+    width: 720px;
+    height: 700px;
+    margin-top: -142px;
+    margin-right: -110px;
+    margin-left: 60px;
+    z-index: 0;
+  }
+
+  .program__main-image {
+    margin: 0;
+    padding: 0;
     width: 552px;
     height: 499px;
+    position: absolute;
+    left: -90px;
+    top: 120px;
+
   }
 
   .program__button {
-    order: 3;
-    margin-top: -180px;
-    margin-left: 85px;
+    top: 318px;
+    left: -13px;
+    padding-right: 27px;
   }
 
   .program__variety {
