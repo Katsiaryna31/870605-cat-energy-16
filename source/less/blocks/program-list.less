@@ -1,19 +1,24 @@
 .program-list__item {
   margin: 0 0 20px;
-  padding: 25px 30px 25px 20px;
+  padding: 25px 20px 23px 20px;
   list-style: none;
-  background-color: #f2f2f2;
+  background-color: @grey-background;
   display: block;
 }
 
 .program-list__item-name {
   font-size: 24px;
   line-height: 37px;
-  padding: 0 15px 20px 0;
+  padding: 6px 15px 21px 70px;
   font-weight: 400;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.program-list__item-name--pro {
+  padding-top: 4px;
+  padding-bottom: 20px;
 }
 
 .program-list__item-description {
@@ -21,11 +26,14 @@
   font-size: 14px;
   line-height: 18px;
   font-family: @Arial;
-  margin-bottom: 20px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid @border-footer;
 }
 
 .program-list__item-transfer {
+  display: block;
   .zero-space ();
+  padding-top: 18px;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
@@ -36,21 +44,31 @@
 @media (min-width: @tablet-width) {
   .program-list__item {
     margin: 0 0 30px;
-    padding: 80px 25px 60px 50px;
+    padding: 75px 25px 62px 52px;
   }
 
   .program-list__item-name {
     padding: 0;
-    margin-top: 25px;
+    margin-bottom: 24px;
     font-size: 36px;
     line-height: 37px;
   }
 
+  .program-list__item-name--pro {
+    padding-top: 2px;
+    padding-bottom: 0;
+  }
+
   .program-list__item-description {
-    padding-right: 260px;
-    margin-bottom: 60px;
+    padding-right: 250px;
+    margin-bottom: 15px;
     font-size: 16px;
     line-height: 24px;
+    border: none;
+  }
+
+  .program-list__item-description--pro {
+    padding-right: 290px;
   }
 
   .program-list__item-transfer {
@@ -61,17 +79,17 @@
 
 @media (min-width: @desktop-width) {
   .program-list__item {
-    padding: 40px 55px 60px 50px;
+    padding: 40px 55px 60px 52px;
     width: 465px;
   }
 
   .program-list__item-name {
-    margin-bottom: 40px;
-    padding: 40px 0 35px 165px;
+    margin-bottom: 42px;
+    padding: 36px 0 32px 163px;
   }
 
   .program-list__item-description {
     padding: 0;
-    margin-bottom: 40px;
+    margin-bottom: 13px;
   }
 }

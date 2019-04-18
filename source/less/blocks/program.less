@@ -1,20 +1,26 @@
 .program__header {
   color: #ffffff;
-  background: @green-background url("../../img/index-background-mobile@1x.jpg") no-repeat 50% 0;
-  background-size: 302px 305px;
   .zero-space ();
-  padding-top: 30px;
+  margin: 0;
+}
+
+.program__name-part {
+  background: @green-background url("../../img/index-background-mobile@1x.jpg") no-repeat center 0;
+  background-size: cover;
   width: auto;
-  display: block;
+  padding-top: 28px;
+  padding-bottom: 137px;
+  margin: 0 -20px;
 }
 
 .program__name {
   font-size: 36px;
   line-height: 36px;
-  padding: 0 15px;
+  padding: 0 5px;
   margin: 0;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
   text-align: center;
+  font-weight: normal;
 }
 
 .program__slogan {
@@ -28,11 +34,16 @@
 }
 
 .program__main-image {
-  margin-bottom: 5px;
+  margin: -140px auto 5px;
+  width: 280px;
+  height: 270px;
+  display: block;
 }
 
 .program__button {
   margin: 0;
+  margin-bottom: 22px;
+  display: block;
 }
 
 .program__variety {
@@ -42,14 +53,16 @@
 
 @media (min-width: @tablet-width) {
   .program__header {
-    background: #ffffff;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
+    position: relative;
   }
 
   .program__name-part {
-    margin-left: 90px;
-    .zero-space ();
+    margin: 0;
+    background: #ffffff;
+    padding: 40px 88px 20px;
   }
 
   .program__name {
@@ -57,7 +70,7 @@
     text-align: left;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 45px;
+    margin-bottom: 42px;
     color: #111111;
   }
 
@@ -67,25 +80,70 @@
     line-height: 20px;
     text-align: left;
     color: #111111;
-    margin-bottom: 20px;
+    margin-bottom: 0;
+  }
+
+  .program__main-image {
+    margin: 0 auto;
+    width: 709px;
+    height: 609px;
+  }
+
+  .program__button {
+    padding: 16px 27px;
+    margin-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    align-self: flex-start;
+    z-index: 2;
+    position: absolute;
+    top: 268px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .program__header {
-    background: @green-background url("../../img/index-background-desktop@1x.jpg") no-repeat 100% 0;
-    background-size: 720px 696px;
-    margin: -140px -110px 80px 0;
     padding: 0;
-    padding-bottom: 150px;
+    padding-bottom: 80px;
+    flex-direction: row;
   }
 
   .program__name-part {
-    margin-top: 140px;
+    width: 450px;
+    padding: 85px 20px 20px 80px;
+  }
+
+  .program__slogan {
+    .zero-space ();
+    padding-left: 0;
+  }
+
+  .program__image-wrapper {
+    background: @green-background url("../../img/index-background-desktop@1x.jpg") no-repeat 100% 0;
+    background-size: 720px 700px;
+    position: relative;
+    width: 720px;
+    height: 700px;
+    margin-top: -142px;
+    margin-right: -110px;
+    margin-left: 60px;
+    z-index: 0;
   }
 
   .program__main-image {
-    margin-top: 140px;
+    margin: 0;
+    padding: 0;
+    width: 552px;
+    height: 499px;
+    position: absolute;
+    left: -90px;
+    top: 120px;
+  }
+
+  .program__button {
+    top: 318px;
+    left: -13px;
+    padding-right: 27px;
   }
 
   .program__variety {

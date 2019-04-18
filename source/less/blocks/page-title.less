@@ -1,16 +1,28 @@
 .page-title {
   margin: 0;
-  padding: 33px 0;
+  padding: 15px 0 30px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
+  border-top: 1px solid @border-header;
+  border-bottom: 1px solid @border-header;
+  display: block;
 }
 
 @media (min-width: @tablet-width) {
   .page-title {
+    margin-top: 40px;
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 70px;
+    margin-bottom: 75px;
     padding: 0;
+    border: none;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-title {
+    margin-top: 50px;
+    margin-bottom: 75px;
   }
 }
