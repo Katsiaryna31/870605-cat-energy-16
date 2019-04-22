@@ -5,8 +5,8 @@
 
 .process__name {
   .zero-space ();
-  margin-top: -2px;
-  margin-bottom: 3px;
+  margin-top: -3px;
+  margin-bottom: 31px;
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
@@ -27,6 +27,95 @@
   display: block;
 }
 
+.process__item--healthy {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #68b738;
+    background-image: url("../img/advantage-leaf@1x.png");
+    background-size: 50px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-leaf@2x.png");
+    }
+  }
+}
+
+.process__item--powder {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #68b738;
+    background-image: url("../img/advantage-powder@1x.png");
+    background-size: 50px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-powder@2x.png");
+    }
+  }
+}
+
+.process__item--food {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #68b738;
+    background-image: url("../img/advantage-dining@1x.png");
+    background-size: 50px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-dining@2x.png");
+    }
+  }
+}
+
+.process__item--result {
+  position: relative;
+
+  &::before {
+    content: "";
+    background-color: #68b738;
+    background-image: url("../img/advantage-clock@1x.png");
+    background-size: 50px auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -3px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/advantage-clock@2x.png");
+    }
+  }
+}
+
+
 @media (min-width: @tablet-width) {
   .process {
     margin-bottom: 25px;
@@ -34,8 +123,8 @@
 
   .process__name {
     margin: 0;
-    margin-top: 45px;
-    margin-bottom: 63px;
+    margin-top: 47px;
+    margin-bottom: 60px;
     font-size: 60px;
   }
 
@@ -43,14 +132,103 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: auto;
   }
 
   .process__item {
-    padding: 122px 80px 50px 0;
+    padding: 123px 79px 50px 0;
     margin-bottom: 72px;
     width: 245px;
     font-size: 16px;
     line-height: 24px;
+  }
+
+  .process__item--healthy {
+    &::before {
+      top: 12px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "1";
+      font-size: 281px;
+      color: #f2f2f2;
+      font-family: @Oswald;
+      width: 70px;
+      height: 230px;
+      position: absolute;
+      top: 100px;
+      left: 118px;
+      z-index: -1;
+    }
+  }
+
+  .process__item--powder {
+    &::before {
+      top: 12px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "2";
+      font-size: 281px;
+      color: #f2f2f2;
+      font-family: @Oswald;
+      width: 70px;
+      height: 230px;
+      position: absolute;
+      top: 101px;
+      left: 112px;
+      z-index: -1;
+    }
+  }
+
+  .process__item--food {
+    &::before {
+      top: 12px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "3";
+      font-size: 281px;
+      color: #f2f2f2;
+      font-family: @Oswald;
+      width: 70px;
+      height: 230px;
+      position: absolute;
+      top: 100px;
+      left: 112px;
+      z-index: -1;
+    }
+  }
+
+  .process__item--result {
+    &::before {
+      top: 12px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+    }
+
+    &::after {
+      content: "4";
+      font-size: 281px;
+      color: #f2f2f2;
+      font-family: @Oswald;
+      width: 70px;
+      height: 230px;
+      position: absolute;
+      top: 100px;
+      left: 113px;
+      z-index: -1;
+    }
   }
 }
 
@@ -60,7 +238,7 @@
   }
 
   .process__name {
-    margin-top: -35px;
+    margin-top: -37px;
     margin-bottom: 60px;
   }
 
