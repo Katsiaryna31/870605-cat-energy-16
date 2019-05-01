@@ -8,7 +8,6 @@ var rename = require("gulp-rename");
 var svgstore = require("gulp-svgstore");
 var less = require("gulp-less");
 var uglify = require('gulp-uglify');
-var pipeline = require('readable-stream').pipeline();
 var postcss = require("gulp-postcss");
 var htmlmin = require('gulp-htmlmin');
 var posthtml = require("gulp-posthtml");
@@ -74,11 +73,9 @@ gulp.task("sprite", function () {
 });
 
 gulp.task('compress', function () {
-  return pipeline(
-        gulp.src('source/*.js'),
-        uglify(),
-        gulp.dest('build')
-  );
+  return gulp.src("source/js/*.js")
+    .pipe(uglify())
+    .pipe(gulp.dest("build/js"));
 });
 
 gulp.task("html", function () {
