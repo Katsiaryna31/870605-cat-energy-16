@@ -87,9 +87,9 @@ gulp.task("html", function () {
 });
 
 gulp.task('minify', function () {
-  return gulp.src('build/*.html')
+  return gulp.src("build/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('build'));
+    .pipe(gulp.dest("build"));
 });
 
 gulp.task("server", function () {
