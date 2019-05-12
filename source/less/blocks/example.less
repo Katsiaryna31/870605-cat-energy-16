@@ -8,7 +8,7 @@
 .example__name {
   font-size: 36px;
   line-height: 60px;
-  font-family: "Oswald";
+  font-family: @Oswald;
   font-weight: 400;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@
 .example__details {
   font-size: 14px;
   line-height: 18px;
-  font-family: "Arial";
+  font-family: @Arial;
   font-weight: 400;
   padding-bottom: 25px;
 }
@@ -60,7 +60,7 @@
   width: 57px;
   top: 47px;
   left: 16px;
-  font-family: "Arial";
+  font-family: @Arial;
   text-transform: lowercase;
   text-align: center;
   padding: 0 16px;
@@ -171,20 +171,17 @@
 
   .example__wrapper {
     flex-direction: column;
+    margin-bottom: 0;
+    padding-bottom: 70px;
   }
 
   .example__total {
     font-size: 20px;
     line-height: 27px;
     width: 327px;
-    padding: 0px;
+    padding: 0;
     text-align: left;
     display: flex;
     justify-content: space-between;
-  }
-
-  .example__wrapper {
-    margin-bottom: 0;
-    padding-bottom: 70px;
   }
 }
