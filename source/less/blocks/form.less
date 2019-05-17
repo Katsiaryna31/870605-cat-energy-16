@@ -74,9 +74,13 @@
   line-height: 18px;
   text-transform: uppercase;
   position: relative;
+}
 
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
+.form__radio-name:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  &::before {
+    border: 1px solid rgba(186, 186, 186, 0.3);
   }
 }
 
@@ -106,7 +110,7 @@
 
 .form__radio-name:hover {
   &::before {
-  border: 1px solid #bababa;
+    border: 1px solid #bababa;
   }
 }
 
@@ -305,10 +309,6 @@
   line-height: 18px;
   text-transform: uppercase;
   position: relative;
-
-  &:active {
-    color: rgba(0, 0, 0, 0.3);
-  }
 }
 
 .form__checkbox-name::before {
@@ -334,11 +334,13 @@
 
 .form__checkbox-name:hover {
   &::before {
-  border: 1px solid #bababa;
+   border: 1px solid #bababa;
   }
 }
 
 .form__checkbox-name:active {
+  color: rgba(0, 0, 0, 0.3);
+
   &::before {
     border: 1px solid rgba(186, 186, 186, 0.3);
   }
@@ -470,13 +472,10 @@
 
   .form__owner-input--phone {
     margin-left: -3px;
-  }
-
-  .form__owner-input--email {
     background-position: 97% center;
   }
 
-  .form__owner-input--phone {
+  .form__owner-input--email {
     background-position: 97% center;
   }
 
@@ -656,6 +655,7 @@
 
   .form__products {
     padding: 0;
+    margin-bottom: 36px;
   }
 
   .form__add-wrapper {
@@ -670,10 +670,6 @@
 
   .form__input-products {
     width: 245px;
-  }
-
-  .form__products {
-    margin-bottom: 36px;
   }
 
   .form__button-wrapper {
