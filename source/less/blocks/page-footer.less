@@ -12,6 +12,14 @@
   width: 128px;
   height: 24px;
   border-bottom: 1px solid @border-footer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .page-footer__copyright {
@@ -30,6 +38,10 @@
   padding-right: 100px;
   position: relative;
 
+  &:active {
+    opacity: 0.3;
+  }
+
   &::after {
     content: "";
     background-image: url("../img/htmlacademy.svg");
@@ -41,6 +53,10 @@
     width: 40px;
     height: 50px;
   }
+}
+
+.page-footer__copyright-link:hover::after {
+  background-image: url("../img/htmlacademy-green.svg");
 }
 
 @media (min-width: @tablet-width) {

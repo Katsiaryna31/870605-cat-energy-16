@@ -54,7 +54,7 @@
             </div>
             <div class="form__input-wrapper">
               <label class="form__label-name" for="age-field">Возраст (лет):</label>
-              <input class="form__name-input" type="text" id="age-field" name="age" value="7">
+              <input class="form__name-input" type="text" id="age-field" name="age" placeholder="7">
             </div>
           </fieldset>
           <fieldset class="form__aim">
@@ -76,13 +76,15 @@
           <div class="form__owner-wrapper">
             <legend class="form__owner-contacts">Контактные данные (владельца кота)</legend>
           </div>
-          <div class="form__input-wrapper">
-            <label class="form__label-name" for="owner-field">E-mail:<sup>*</sup></label>
-            <input class="form__owner-input form__owner-input--email" type="text" id="owner-field" name="email" value="kuklachev@gmail.com" required>
-          </div>
-          <div class="form__input-wrapper">
-            <label class="form__label-name" for="phone-field">Телефон:<sup>*</sup></label>
-            <input class="form__owner-input form__owner-input--phone" type="text" id="phone-field" name="phone" value="8 (960) 900-60-90" required>
+          <div class="form__owner-info">
+            <div class="form__input-wrapper form__input-contacts">
+              <label class="form__label-name" for="owner-field">E-mail:<sup>*</sup></label>
+              <input class="form__owner-input form__owner-input--email" type="text" id="owner-field" name="email" value="kuklachev@gmail.com" required>
+            </div>
+            <div class="form__input-wrapper form__input-contacts">
+              <label class="form__label-name" for="phone-field">Телефон:<sup>*</sup></label>
+              <input class="form__owner-input form__owner-input--phone" type="text" id="phone-field" name="phone" value="8 (960) 900-60-90" required>
+            </div>
           </div>
         </fieldset>
         <fieldset class="form__story">
@@ -95,31 +97,33 @@
           <div class="form__add-wrapper">
             <legend class="form__add-products">Дополнительно</legend>
           </div>
-          <div class="form__input-wrapper">
-            <input class="form__products-input form__products-input--active visually-hidden" type="checkbox" name="sweetener" id="filter-sweetener" checked>
-            <label class="form__checkbox-name" for="filter-sweetener">Сахарозаменитель</label>
-          </div>
-          <div class="form__input-wrapper">
-            <input class="form__products-input visually-hidden" type="checkbox" name="water" id="filter-water">
-            <label class="form__checkbox-name" for="filter-water">Питьевая вода</label>
-          </div>
-          <div class="form__input-wrapper">
-            <input class="form__products-input visually-hidden" type="checkbox" name="milk" id="filter-milk">
-            <label class="form__checkbox-name" for="filter-milk">Молоко</label>
-          </div>
-          <div class="form__input-wrapper">
-            <input class="form__products-input visually-hidden" type="checkbox" name="vitamins" id="filter-vitamins">
-            <label class="form__checkbox-name" for="filter-vitamins">Витамины</label>
+          <div class="form__add-list">
+            <div class="form__input-wrapper form__input-products">
+              <input class="form__products-input form__products-input--active visually-hidden" type="checkbox" name="sweetener" id="filter-sweetener" checked>
+              <label class="form__checkbox-name" for="filter-sweetener">Сахарозаменитель</label>
+            </div>
+            <div class="form__input-wrapper form__input-products">
+              <input class="form__products-input visually-hidden" type="checkbox" name="water" id="filter-water">
+              <label class="form__checkbox-name" for="filter-water">Питьевая вода</label>
+            </div>
+            <div class="form__input-wrapper form__input-products">
+              <input class="form__products-input visually-hidden" type="checkbox" name="milk" id="filter-milk">
+              <label class="form__checkbox-name" for="filter-milk">Молоко</label>
+            </div>
+            <div class="form__input-wrapper form__input-products">
+              <input class="form__products-input visually-hidden" type="checkbox" name="vitamins" id="filter-vitamins">
+              <label class="form__checkbox-name" for="filter-vitamins">Витамины</label>
+            </div>
           </div>
         </fieldset>
         <div class="form__button-wrapper">
           <input class="button form__button-filters" type="submit" name="submit" value="Отправить заявку">
-          <p class="form__explain"><sup>*</sup> — Обязательные поля</p>
+          <p class="form__explain">* — Обязательные поля</p>
         </div>
       </form>
       <section class="contacts">
         <h2 class="visually-hidden">Наши контакты</h2>
-        <div class="contacts__wrapper">
+        <div class="contacts__wrapper-catalog">
           <div class="contacts__invite">Приглашаем<br>к сотрудничеству дилеров!</div>
           <div class="contacts__address">
             <span class="contacts__address-street">ул. Большая Конюшенная, д. 19/8</span>

@@ -26,7 +26,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__item-link site-list__item-link--index site-list__item-link--active">Главная</a>
+              <a class="site-list__item-link site-list__item-link--index site-list__item-link--index-active">Главная</a>
             </li>
             <li class="site-list__item">
               <a  class="site-list__item-link site-list__item-link--index" href="catalog.html">Каталог продукции</a>
@@ -102,24 +102,17 @@
           </div>
           <div class="example-photo">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/cat-before-after-desktop.webp">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/cat-before-after.webp">
               <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png 1x, img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/before-tablet@1x.jpg 1x, img/before-tablet@2x.jpg 2x">
+              <source media="(min-width: 1440px)" srcset="img/cat-before-after-desktop.png">
+              <source media="(min-width: 768px)" srcset="img/cat-before-after.png">
               <img class="example-photo__before" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Cat fat">
-            </picture>
-            <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
-              <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="img/after-tablet@1x.jpg 1x, img/after-tablet@2x.jpg 2x">
-              <img class="example-photo__after" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Cat fit">
             </picture>
             <div class="example-photo__range-wrapper">
               <span class="example-photo__meaning">Было</span>
-              <input class="example-photo__range" type="range" min="1" max="50">
+              <span class="example-photo__range"></span>
+              <input class="visually-hidden" type="range" min="1" max="50">
               <span class="example-photo__meaning">Стало</span>
             </div>
           </div>

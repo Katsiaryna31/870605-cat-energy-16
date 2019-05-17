@@ -101,12 +101,28 @@
     content: "";
     background-image: url("../img/icon-right-arrow-long.svg");
     background-repeat: no-repeat;
-    background-size: 24px auto;
+    background-size: 24px 11px;
     position: absolute;
     top: 21px;
     left: 96px;
     width: 24px;
     height: 11px;
+  }
+
+  &:hover {
+    &::after {
+      background-image: url("../img/icon-right-arrow-verylong.svg");
+      background-size: 33px 11px;
+      width: 33px;
+    }
+  }
+
+  &:active {
+    color: rgba(0, 0, 0, 0.3);
+
+    &::after {
+      opacity: 0.3;
+    }
   }
 }
 

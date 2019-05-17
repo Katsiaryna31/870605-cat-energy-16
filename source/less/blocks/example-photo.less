@@ -10,24 +10,46 @@
   height: 232px;
   position: absolute;
   z-index: 1;
-}
-
-.example-photo__after {
-  width: 311px;
-  height: 232px;
-  position: absolute;
+  top: 3px;
+  left: -15px;
 }
 
 .example-photo__range-wrapper {
   position: absolute;
   bottom: 18px;
-  left: 30px;
+  left: 42px;
+  width: 100%;
+  display: flex;
+  align-items: center;
 }
 
 .example-photo__meaning {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
+}
+
+.example-photo__range {
+  width: 84px;
+  height: 14px;
+  position: relative;
+  border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  display: block;
+  border-radius: 15px;
+  margin: 0 19px;
+
+  &::after {
+    content: "";
+    width: 35px;
+    height: 6px;
+    background-color: #68b738;
+    position: absolute;
+    border-radius: 15px;
+    top: 3px;
+    left: 5px;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -39,26 +61,17 @@
   }
 
   .example-photo__before {
-    width: 690px;
+    width: 636px;
     height: 517px;
-    top: -165px;
-    left: 45px;
-  }
-
-  .example-photo__after {
-    width: 690px;
-    height: 517px;
-    top: -165px;
+    top: -167px;
     left: 45px;
   }
 
   .example-photo__range-wrapper {
     position: absolute;
-    bottom: 73px;
-    left: 100px;
-    width: 575px;
-    display: flex;
-    flex-direction: row;
+    bottom: 70px;
+    left: 83px;
+    width: 680px;
   }
 
   .example-photo__meaning {
@@ -67,12 +80,44 @@
     border-bottom: 1px dotted #bebebe;
     width: 55px;
     padding-bottom: 5px;
-    margin: 0 20px;
+    margin: 0 15px;
   }
 
   .example-photo__range {
-    width: 425px;
+    width: 428px;
+    height: 6px;
+    position: relative;
+    border: none;
+    box-sizing: border-box;
+    background-color: #dcdcdc;
     display: block;
+    border-radius: 15px;
+    margin: 0;
+    margin-right: 8px;
+
+    &::before {
+      content: "";
+      width: 33px;
+      height: 33px;
+      background-color: #ffffff;
+      position: absolute;
+      border-radius: 50%;
+      top: -15px;
+      left: 198px;
+      border: 1px solid #cdcdcd;
+      box-shadow: 2px 2px 5px 0 rgba(0, 0, 0, 0.15);
+    }
+
+    &::after {
+      content: "";
+      width: 8px;
+      height: 8px;
+      background-color: #68b738;
+      position: absolute;
+      border-radius: 50%;
+      top: -2px;
+      left: 212px;
+    }
   }
 }
 
@@ -82,11 +127,14 @@
     width: 690px;
     background: none;
     position: absolute;
-    right: 150px;
-    top: 135px;
+    right: 147px;
+    top: 138px;
   }
 
   .example-photo__range-wrapper {
-    bottom: 180px;
+    position: absolute;
+    bottom: 176px;
+    left: 110px;
+    width: 680px;
   }
 }

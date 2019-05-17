@@ -121,9 +121,18 @@
   margin-bottom: 24px;
   width: 100%;
   background-color: @grey-background;
-  color: #111111;
+  color: #444444;
   font-size: 16px;
   line-height: 20px;
+  box-shadow: none;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 @media (min-width: @tablet-width) {
