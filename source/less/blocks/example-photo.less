@@ -6,19 +6,19 @@
 }
 
 .example-photo__before {
-  width: 311px;
-  height: 232px;
+  width: 320px;
+  height: auto;
   position: absolute;
   z-index: 1;
-  top: 3px;
-  left: -15px;
+  top: 0;
+  left: 0;
 }
 
 .example-photo__range-wrapper {
   position: absolute;
   bottom: 18px;
-  left: 42px;
-  width: 100%;
+  left: 62px;
+  width: 220px;
   display: flex;
   align-items: center;
 }
@@ -118,6 +118,16 @@
       top: -2px;
       left: 212px;
     }
+  }
+
+  .example-photo__range:hover::before {
+    box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.25);
+  }
+
+  .example-photo__range:active::before {
+    border: 2px solid #68b738;
+    width: 31px;
+    height: 31px;
   }
 }
 

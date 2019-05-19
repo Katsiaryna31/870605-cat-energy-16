@@ -5,14 +5,14 @@
   display: block;
   width: 230px;
   padding: 0;
-  padding-bottom: 40px;
-  margin-top: -5px;
+  padding-bottom: 39px;
+  margin: 0 20px;
+  margin-top: -3px;
 }
 
 .form__name {
   border: none;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 20px 20px;
   padding: 0;
   padding-bottom: 11px;
   border-bottom: 1px solid @border-header;
@@ -60,8 +60,7 @@
 
 .form__aim {
   border: none;
-  margin: 0;
-  margin-bottom: 20px;
+  margin: 0 20px 20px;
   padding: 0;
   padding-bottom: 11px;
   border-bottom: 1px solid @border-header;
@@ -76,14 +75,6 @@
   position: relative;
 }
 
-.form__radio-name:active {
-  color: rgba(0, 0, 0, 0.3);
-
-  &::before {
-    border: 1px solid rgba(186, 186, 186, 0.3);
-  }
-}
-
 .form__radio-name::before {
   content: "";
   background: transparent;
@@ -96,14 +87,18 @@
   border: 1px solid #cdcdcd;
 }
 
+.form__aim-input:focus + .form__radio-name::before {
+  border: 1px solid #bababa;
+}
+
 .form__aim-input:checked + .form__radio-name::after {
   content: "";
   background: rgb(104, 183, 56);
   width: 11px;
   height: 11px;
   position: absolute;
-  top: 9px;
-  left: 9px;
+  top: 10px;
+  left: 10px;
   border-radius: 50%;
   z-index: 1;
 }
@@ -114,13 +109,21 @@
   }
 }
 
+.form__radio-name:active {
+  color: rgba(0, 0, 0, 0.3);
+
+  &::before {
+    border: 1px solid rgba(186, 186, 186, 0.3);
+  }
+}
+
 .form__aim-input:checked + .form__radio-name:active::after {
   background: rgba(104, 183, 56, 0.3);
 }
 
 .form__owner {
   border: none;
-  margin: 0;
+  margin: 0 20px;
   padding: 0;
   padding-bottom: 11px;
 }
@@ -146,7 +149,7 @@
   line-height: 24px;
   font-weight: 400;
   width: 220px;
-  padding: 8px 7px 33px 20px;
+  padding: 9px 7px 32px 19px;
   position: relative;
   background-color: #ffffff;
   z-index: 1;
@@ -215,7 +218,7 @@
 
 .form__story {
   border: none;
-  margin: 0;
+  margin: 0 20px;
   margin-bottom: 10px;
   padding: 0;
   padding-bottom: 11px;
@@ -263,7 +266,7 @@
 
 .form__products {
   border: none;
-  margin: 0;
+  margin: 0 20px;
   margin-bottom: 10px;
   padding: 0;
   padding-bottom: 11px;
@@ -279,7 +282,7 @@
     width: 100%;
     height: 3px;
     position: absolute;
-    top: 20px;
+    top: 18px;
     left: 0;
   }
 }
@@ -290,7 +293,7 @@
   line-height: 24px;
   font-weight: 400;
   width: 185px;
-  padding: 6px 15px 33px 20px;
+  padding: 5px 15px 33px 20px;
   position: relative;
   background-color: #ffffff;
   z-index: 1;
@@ -314,6 +317,10 @@
   top: 0;
   left: 0;
   border: 1px solid #cdcdcd;
+}
+
+.form__products-input:focus + .form__checkbox-name::before {
+  border: 1px solid #bababa;
 }
 
 .form__products-input:checked + .form__checkbox-name::after {
@@ -345,7 +352,7 @@
 }
 
 .form__button-filters {
-  margin: 0;
+  margin: 0 20px;
   margin-bottom: 20px;
   display: block;
   border: none;
@@ -372,13 +379,13 @@
     line-height: 30px;
     width: 335px;
     padding: 0;
-    padding-left: 40px;
+    padding-left: 50px;
     padding-bottom: 65px;
     margin-top: -18px;
   }
 
   .form__name {
-    margin-bottom: 42px;
+    margin: 0 30px 42px;
     padding: 0 38px 11px 41px;
     border: none;
   }
@@ -398,7 +405,7 @@
 
   .form__aim {
     border: 1px solid @border-header;
-    margin: 0 40px;
+    margin: 0 70px;
     margin-bottom: 60px;
     padding: 25px 25px 10px;
   }
@@ -434,7 +441,7 @@
   }
 
   .form__owner {
-    margin-bottom: 18px;
+    margin: 0 30px 18px;
     padding: 0 38px 11px 41px;
     border: none;
   }
@@ -474,7 +481,7 @@
   }
 
   .form__story {
-    margin-bottom: 34px;
+    margin: 0 30px 34px;
     padding: 0 38px 11px 41px;
     border: none;
   }
@@ -504,7 +511,7 @@
   }
 
   .form__products {
-    margin-bottom: 18px;
+    margin: 0 30px 18px;
     padding: 0 38px 11px 41px;
     border: none;
   }
@@ -563,7 +570,7 @@
   }
 
   .form__button-wrapper {
-    padding: 0 40px;
+    padding: 0 50px;
     margin-top: -3px;
     margin-bottom: 52px;
     flex-direction: row;
@@ -579,6 +586,7 @@
 
 @media (min-width: @desktop-width) {
   .form__description {
+    margin: -20px 110px 0;
     padding: 0;
     padding-bottom: 65px;
   }
@@ -586,12 +594,13 @@
   .form__first-wrapper {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 52px;
+    margin: 0 110px 52px;
   }
 
   .form__name {
     padding: 0;
-    margin-bottom: -20px;
+    margin: 0;
+    margin-bottom: -17px;
     width: 570px;
   }
 
@@ -601,6 +610,7 @@
   }
 
   .form__owner {
+    margin: 0 110px;
     padding: 0;
   }
 
@@ -644,12 +654,12 @@
 
   .form__story {
     padding: 0;
-    margin-bottom: 47px;
+    margin: 20px 110px 47px;
   }
 
   .form__products {
     padding: 0;
-    margin-bottom: 36px;
+    margin: 0 110px 36px;
   }
 
   .form__add-wrapper {
@@ -668,8 +678,7 @@
 
   .form__button-wrapper {
     padding: 0;
-    margin: 0;
-    margin-bottom: 60px;
+    margin: -2px 90px 60px;
     flex-direction: row;
     align-items: center;
   }
